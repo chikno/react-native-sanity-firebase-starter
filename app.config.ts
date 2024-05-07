@@ -5,7 +5,7 @@ import { ClientEnv, Env } from './env';
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: Env.NAME,
-  description: `${Env.NAME} sanity-expo-react-native`,
+  description: `${Env.NAME} sanity-firebase-expo-react-native`,
   owner: Env.EXPO_ACCOUNT_OWNER,
   scheme: Env.SCHEME,
   slug: <APP_SLUG_HERE>,

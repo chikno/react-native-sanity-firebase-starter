@@ -2,7 +2,7 @@ appId: ${APP_ID}
 tags:
   - util
 ---
-- assertVisible: "sanity-expo-react-native Starter"
+- assertVisible: "sanity-firebase-expo-react-native Starter"
 - assertVisible: "Let's Get Started "
 - tapOn: "Let's Get Started "
 - assertVisible: "Sign In"

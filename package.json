@@ -1,5 +1,5 @@
 {
-  "name": "sanity-expo-react-native",
+  "name": "sanity-firebase-expo-react-native",
   "version": "0.0.1",
   "private": true,
   "main": "expo-router/entry",
@@ -34,7 +34,7 @@
     "test:ci": "pnpm run test --coverage",
     "test:watch": "pnpm run test --watch",
     "install-maestro": "curl -Ls 'https://get.maestro.mobile.dev' | bash",
-    "e2e-test": "maestro test .maestro/ -e APP_ID=com.sanity-expo-react-native.development"
+    "e2e-test": "maestro test .maestro/ -e APP_ID=com.sanity-firebase-expo-react-native.development"
   },
   "dependencies": {
     "@expo/metro-runtime": "^3.1.3",

@@ -30,7 +30,7 @@ require('dotenv').config({
  * Such as: bundle id, package name, app name.
  *
  * You can add them to the .env file but we think it's better to keep them here as as we use prefix to generate this values based on the APP_ENV
- * for example: if the APP_ENV is staging, the bundle id will be com.sanity-expo-react-native.staging
+ * for example: if the APP_ENV is staging, the bundle id will be com.sanity-firebase-expo-react-native.staging
  */
 
 // TODO: Replace these values with your own

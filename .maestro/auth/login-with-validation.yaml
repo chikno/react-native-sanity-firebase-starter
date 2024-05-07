@@ -7,7 +7,7 @@ env:
 - launchApp
 - runFlow:
     when:
-      visible: "sanity-expo-react-native Starter"
+      visible: "sanity-firebase-expo-react-native Starter"
     file: ../utils/onboarding.yaml
 - assertVisible: "Sign In"
 - assertVisible:

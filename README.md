@@ -2,7 +2,7 @@
   <img alt="logo" src="./assets/icon.png" width="124px" style="border-radius:10px"/><br/>
 Mobile App </h1>
 
-> This Project is based on [sanity-expo-react-native starter]
+> This Project is based on [sanity-firebase-expo-react-native starter]
 
 ## Requirements
 
