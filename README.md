@@ -21,7 +21,7 @@ Sanity Firebase Expo react native starter</h1>
 
 in order to manage releases flow and app versions and builds , we need to update our EAS_PROJECT_ID and EXPO_PROJECT_OWNER.
 If you done have an expo account , Create one at https://expo.dev/, then create a project , you can easily grab those infos in your expo project dashboard. 
-Once we have those infos , please update the env.js file with the correct values.
+Once we have those infos , please update the .env.* file with the correct values.
 
 ```sh
 const EXPO_ACCOUNT_OWNER = 'sanity-firebase-expo-react-native'; // expo account owner
