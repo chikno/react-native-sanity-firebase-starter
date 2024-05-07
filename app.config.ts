@@ -8,7 +8,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   description: `${Env.NAME} sanity-firebase-expo-react-native`,
   owner: Env.EXPO_ACCOUNT_OWNER,
   scheme: Env.SCHEME,
-  slug: <APP_SLUG_HERE>,
+  slug:  'sanity-firebase-expo-react-native',
   version: Env.VERSION.toString(),
   orientation: 'portrait',
   icon: './assets/icon.png',

@@ -16,8 +16,6 @@ const z = require('zod');
 
 const packageJSON = require('./package.json');
 const path = require('path');
-const { Env } = require('@/core/env');
-const React = require('react');
 const APP_ENV = process.env.APP_ENV ?? 'development';
 const envPath = path.resolve(__dirname, `.env.${APP_ENV}`);
 
@@ -30,23 +28,23 @@ require('dotenv').config({
  * Such as: bundle id, package name, app name.
  *
  * You can add them to the .env file but we think it's better to keep them here as as we use prefix to generate this values based on the APP_ENV
- * for example: if the APP_ENV is staging, the bundle id will be com.sanity-firebase-expo-react-native.staging
+ * for example: if the APP_ENV is staging, the bundle id will be com.kinemobile.staging
  */
 
 // TODO: Replace these values with your own
 
-const BUNDLE_ID = <IOS_BUNDLE_HERE>; // ios bundle id
-const PACKAGE = <PACKAGE_NAME_HERE>; // android package name
-const NAME = '<APP_NAME_HERE>'; // app name
-const EXPO_ACCOUNT_OWNER =<EXPO_ACCOUNT_OWNER_HERE> // expo account owner
-const EAS_PROJECT_ID = <EAS_PROJECT_ID_HERE>; // eas project id
-const SCHEME = <SCHEME_HERE>; // app scheme
+const BUNDLE_ID = 'com.sanity-firebase-expo-react-native'; // ios bundle id
+const PACKAGE = 'com.sanity-firebase-expo-react-native'; // android package name
+const NAME = 'sanity-firebase-expo-react-native'; // app name
+const EXPO_ACCOUNT_OWNER = 'sanity-firebase-expo-react-native'; // expo account owner
+const EAS_PROJECT_ID = 'your-expo-project-id'; // eas project id
+const SCHEME = 'sanity-firebase-expo-react-native'; // app scheme
 
 /**
  * We declare a function withEnvSuffix that will add a suffix to the variable name based on the APP_ENV
  * Add a suffix to variable env based on APP_ENV
- * @param {z.string} name
- * @returns  {z.string}
+ * @param {string} name
+ * @returns  {string}
  */
 
 const withEnvSuffix = (name) => {
@@ -80,7 +78,8 @@ const client = z.object({
   VERSION: z.string(),
 
   // ADD YOUR CLIENT ENV VARS HERE
-  API_URL: z.string(),
+  SANITY_PROJECT_ID: z.string(),
+  SANITY_DATA_SET_NAME: z.string(),
   FIREBASE_API_KEY: z.string(),
   FIREBASE_AUTH_DOMAIN: z.string(),
   FIREBASE_PROJECT_ID: z.string(),
@@ -112,7 +111,8 @@ const _clientEnv = {
   VERSION: packageJSON.version,
 
   // ADD YOUR ENV VARS HERE TOO
-  API_URL: process.env.API_URL,
+  SANITY_PROJECT_ID: process.env.SANITY_PROJECT_ID,
+  SANITY_DATA_SET_NAME: process.env.SANITY_DATA_SET_NAME,
   FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
   FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
   FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID,
