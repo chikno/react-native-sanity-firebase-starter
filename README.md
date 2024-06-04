@@ -62,7 +62,7 @@ and we are ready to go further with the next steps.
 Clone the repo to your machine and install deps :
 
 ```sh
-git clonehttps://github.com/chikno/sanity-firebase-expo-react-native-starter
+git clone https://github.com/chikno/sanity-firebase-expo-react-native-starter
 
 cd ./sanity-firebase-expo-react-native-starter
 
